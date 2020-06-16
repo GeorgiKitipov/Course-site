@@ -1,0 +1,636 @@
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*--- Navigation Bar ---*/
+.navbar
+{
+    background-color: rgba(0, 0, 0, 0.808);
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+}
+.navbar img
+{
+    height: 3rem;
+}
+.logo
+{
+    height: 2rem;
+    padding: 0;
+}
+.navbar ul
+{
+    margin-left: 10rem;
+    margin-top: -2rem;
+}
+.navbar ul li
+{
+    display: inline-block;
+    padding: 0.8rem 1rem;
+}
+.navbar ul li:hover
+{
+    background-color: rgb(17, 170, 157);
+}
+.navbar ul li a
+{
+    text-decoration: none;
+    color: rgb(250, 250, 250);
+    font-size: 1.5rem;
+    font-weight: 350;
+}
+.active
+{
+    float: right;
+    
+}
+.dropdown
+{
+    display: none;
+}
+.dropdown-content
+{
+    display: none;
+}
+.home
+{
+    height: 40rem;
+    width: 100%;
+    background-image: url(img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.caption h1
+{
+    color: rgb(46, 46, 46);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 4rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-shadow: 2px 2px 3px black;
+
+}
+.caption h3
+{
+    color: rgb(46, 46, 46);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 1rem;
+    text-shadow: 1px 1px 2px black;
+}
+.btn
+{
+    padding: 0.6rem 3rem;
+    border-radius: 0;
+    border-width: thick;
+    background-color: rgba(255, 255, 255, 0);
+    margin-top: 1rem;
+    border: rgb(46, 46, 46) solid;
+    font-weight: 800;
+    font-size: 1rem;
+    color: rgb(46, 46, 46);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+.btn:hover
+{
+    cursor: pointer;
+    background-color:rgb(46, 46, 46) ;
+    color: #e4d0e6;
+    font-weight: 800;
+    font-size: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.caption
+{
+    text-align: center;
+    position: absolute;
+    top: 44%;
+    left: 12%;
+}
+
+.about-us
+{
+    width: 100%;
+    background-color: rgb(230, 230, 230);
+    color: rgb(46, 46, 46);
+    text-align: center;
+}
+.about-us h1
+{
+    text-align: center;
+    padding-top: 3rem;
+    letter-spacing: 0.1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 3px black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.horizontal-line
+{
+    margin-top: 1rem;
+    border-width: 0.1rem;
+    width: 30%;
+    border: rgb(17, 170, 157) solid ;
+}
+.about-us-info h3
+{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+}
+.about-us-info p
+{
+    margin-top: 0.5rem;
+    font-weight: 400;
+    color: rgb(70, 70, 70);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.about-us-info
+{
+    display: inline-block;
+    height: 15rem;
+    width: 20rem;
+    margin: 5rem 1.5rem; 
+    margin-bottom: 8rem;
+}
+.about-us-info img
+{
+    height: 10rem;
+    border-radius: 10px;
+}
+.about-us-hr
+{
+    margin-top: 1rem;
+    width: 25%;
+    border: rgb(17, 170, 157) solid 2.5px ;
+}
+
+.team
+{
+    background-image: url(img/background2.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.conteiner
+{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.466);
+    text-align: center;
+}
+.conteiner h1
+{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 5rem;
+    text-shadow: 1px 1px 5px black;
+    letter-spacing: 0.2rem;
+}
+.conteiner hr
+{
+    margin-top: 1rem;
+    width: 5%;
+    border: rgb(17, 170, 157) solid 2px ;
+}
+.content img
+{
+    height: 17rem;
+    width: 19rem;
+    border-radius: 10px 10px 0px 0px;
+    z-index: 1;
+    transition: transform .5s ease;
+    cursor: pointer;
+}
+.content img:hover
+{
+    transform: scale(1.1);
+}
+.content
+{
+    display: inline-block;
+    margin: 5rem 2rem ;
+    height: 30rem;
+    background-color: rgba(187, 187, 187, 0.534);
+    border-radius: 10px 10px 0px 0px;
+    overflow: hidden;
+}
+.content h3
+{
+    color: rgb(31, 31, 31);
+    margin-top: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+
+}
+.content hr
+{ 
+    margin-top: 1rem;
+    width: 80%;
+    border: rgb(59, 61, 61) solid 1.5px ;
+}
+.content p
+{
+    color: rgb(31, 31, 31);
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    font-weight: 590;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.content li
+{
+    text-align: left;
+    margin-left: 3rem;
+    font-weight: 550;
+    color: rgb(31, 31, 31);
+}
+
+
+.contact
+{
+    width: 100%;
+    height: 38rem;
+    background-color: rgb(230, 230, 230);
+    padding-top: 2rem;
+    box-shadow: 1px -3px 5px black;
+}
+.contact h1
+{
+    letter-spacing: 0.2rem;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding: 0;
+}
+.contact hr
+{
+    margin-bottom: 3rem;
+    width: 85%;
+    border: rgb(17, 170, 157) solid 1.5px ;
+}
+.hr-footer
+{
+    margin-bottom: 0rem !important;
+    width: 85%;
+    border: rgb(17, 170, 157) solid 1.5px ;
+}
+.copy
+{
+    border-top: rgb(17, 170, 157) solid;
+    height: 2rem;
+    background-color: rgb(31, 31, 36);
+    text-align: center;
+    color: rgb(201, 201, 201);
+    padding-top: 0.8rem;
+    letter-spacing: 0.1rem;
+    
+}
+.facebook
+{
+    height: 2rem;
+    transition: 0.1s;
+    border-radius: 5px;
+
+}
+.facebook:hover
+{
+    box-shadow: 1px 1px 5px black;
+    transition: 0.1s;
+}
+.colums
+{
+    background-color: rgba(55, 56, 56, 0.74);
+    height: 18rem;
+    width: 40%;
+    float: left;
+    margin-left: 6rem;
+    border-radius: 1.3rem;
+    box-shadow: 1px 1px 5px black;
+    text-align: center;
+    padding-top: 1rem;
+}
+.colums ul li
+{
+    list-style: none;
+    display: inline-block;
+}
+.icons
+{
+   position: relative;
+   margin-left: 10rem;
+   background-color: black;
+   height: 2rem;
+   width: 10rem;
+}
+.footer-heading
+{
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+    font-weight: 650;
+    color: rgb(189, 189, 189);
+    margin-bottom: 1rem;
+}
+.footer-main-head
+{
+    letter-spacing: 0.1rem;
+    font-weight: 650;
+    color: rgb(14, 14, 14);
+    margin-bottom: 1rem;
+}
+.work-time
+{
+    font-weight: 700;
+    display: block !important;
+}
+.work-time-plan
+{
+    margin-bottom: 1rem;
+}
+
+.colums-two
+{
+    background-color: rgba(55, 56, 56, 0.74);
+    height: 18rem;
+    width: 40%;
+    border-radius: 1.3rem;
+    box-shadow: 1px 1px 5px black;
+    text-align: center;
+    padding-top: 1rem;
+    float: right;
+    margin-right: 6rem;
+}
+.colums-two h3
+{
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: rgb(214, 214, 214);
+    margin-bottom: 0.5rem;
+}
+.colums-two ul li
+{
+    list-style: none;
+    font-weight: 650;
+    margin-bottom: 0.5rem;
+}
+.colums-two h4
+{
+    color: rgb(214, 214, 214);
+    margin-bottom: 1rem;
+}
+.colums-two input
+{
+    text-align: center;
+    border-radius: 0.2rem;
+    border: none;
+    padding: 0.2rem;
+}
+.textarea
+{
+    margin-top: 0.5rem;
+    text-align: center;
+}
+.btn-form
+{
+    border-radius: 0rem !important;
+    padding: 0.5rem !important;
+    border: black solid !important;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.btn-form:hover
+{
+    background-color: rgb(12, 78, 6);
+    border: rgb(12, 78, 6) solid !important;
+    transition: 0.3s;
+}
+.date
+{
+    padding: 0.05rem !important;
+    cursor: pointer;
+}
+.logo-footer
+{
+    width: 100%;
+    text-align: center;
+}
+.logo-footer img
+{
+    height: 8rem;
+}
+
+
+
+@media(min-width:320px) and (max-width:985px)
+{
+    .colums-two
+    {
+        width: 70%;
+        float: left;
+        margin-top: 1rem;
+        margin-left: 6rem ;
+    }
+    .colums
+    {
+         width: 70%;
+    }
+    .caption h1
+    {
+        font-size: 3rem;
+    }
+    .contact
+    {
+        width: 100%;
+        height: 55rem;
+        background-color: rgba(0, 0, 0, 0.74);
+        padding-top: 2rem;
+    }
+}
+@media(min-width:320px) and (max-width:680px)
+{
+    .logo
+    {
+        margin-left: 31rem;
+    }
+    .navbar img 
+    {
+        margin-top: -0.5rem;
+    }
+    .navbar
+    {
+        background-color: rgba(0, 0, 0, 0.808);
+        position: fixed;
+        z-index: 1;
+        width: 100%;
+        padding: 0.3rem;
+
+    }
+    .navbar ul li
+    {
+        display: none;
+        padding: 0.8rem 1rem;
+    }
+    .navbar ul li:hover
+    {
+        background-color: rgb(17, 170, 157);
+    }
+    .navbar ul li a
+    {
+        text-decoration: none;
+        color: rgb(250, 250, 250);
+        font-size: 1.5rem;
+        font-weight: 350;
+    }
+
+    .dropdown input
+    {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2; 
+        -webkit-touch-callout: none;
+    }
+    .dropdown span
+    {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #cdcdcd;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+            opacity 0.55s ease;
+    }
+    .dropdown span:first-child
+    {
+        transform-origin: 0% 0%;
+    }
+    .dropdown span:nth-last-child(2)
+    {
+        transform-origin: 0% 100%;
+    }
+    .dropdown input:hover ~ span
+    {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+    .dropdown input:hover ~ span:nth-last-child(3)
+    {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    .dropdown input:hover ~ span:nth-last-child(2)
+    {
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    .dropdown
+    {
+        position: relative;
+        display: inline-block;
+        margin-top: 0.5rem;
+        float: left;
+    }
+    .dropdown p a
+    {
+        text-decoration: none;
+        color: rgb(253, 253, 253);
+        letter-spacing: 0.1rem;
+        text-transform: uppercase;
+    }
+    .dropdown p
+    {
+        padding: 0.6rem;
+        width: 100%;
+    }
+    .dropdown p:hover
+    {
+       background-color: rgb(17, 170, 157) ;
+    }
+    .dropdown-content
+    {
+        display: none;
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        text-align: center;
+    }
+    .dropdown:hover .dropdown-content
+    {
+        display: block;
+    }
+    .dropdown:hover
+    {
+        width: 100%;
+    }
+      
+}
+@media(max-width:411px)
+{
+    .colums {
+        margin-left: 4rem;
+    }
+    .colums-two {
+        margin-left: 4rem;
+    }
+    .logo-footer img {
+        height: 6rem;
+    }
+}
+@media(max-width:320px)
+{
+    .content {
+        display: inline-block;
+        margin: 5rem 0 !important;
+    }
+    .caption h1 {
+        font-size: 1.2rem;
+    }
+    .caption h3 {
+        font-size: 1rem;
+    }
+    .btn {
+        padding: 0.4rem 1.5rem;
+    }
+    .about-us-info p {
+        width: 18rem;
+    }
+    .about-us-info {
+        width: 17rem;
+    }
+}
